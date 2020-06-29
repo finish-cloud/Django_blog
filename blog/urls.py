@@ -4,7 +4,7 @@ from blog.views import (
     IndexView, 
     PostDetailView, 
     CategoryListView, 
-    TagListView
+    TagListView,
     CategoryPostView,
     TagPostView,
 )
