@@ -1,10 +1,18 @@
-<!-- blog/category_list.html -->
+{% extends "base.html" %}
 
-<h1>カテゴリ一覧</h1>
-<ul>
-  {% for category in object_list %}
-  <li>{{ category.name }} ({{ category.num_posts }})</li>
-  {% empty %}
-  <li>カテゴリはありません。</li>
-  {% endfor %}
-</ul>
+{% block title %}{{ category.name }} | {{ block.super }}{% endblock %}
+{% block description %}「{{ category.name }}」の投稿一覧ページです。{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <main class="col-md-8">
+      <h1 class="mb-4">「{{ category.name }}」の投稿一覧</h1>
+      {% include "blog/snippets/main_post_list.html" %}
+    </main>
+    <aside class="col-md-4">
+      {% include "blog/snippets/sidebar.html" %}
+    </aside>
+  </div>
+</div>
+{% endblock %}
