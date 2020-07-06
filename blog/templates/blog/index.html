@@ -1,13 +1,33 @@
 {% extends "base.html" %}
 
+
 {% block title %}投稿一覧 | {{ block.super }}{% endblock %}
 {% block description %}マイブログです。毎日更新します。{% endblock %}
 
 {% block content %}
+<head>
+  <meta charset="UTF-8">
+  <title>ページタイトル</title>
+
+  <!-- You can use Open Graph tags to customize link previews.
+       Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"         content="http://example.com/sample.html" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="サイト名" />
+  <meta property="og:title"       content="ページタイトル" />
+  <meta property="og:description" content="説明文" />
+  <meta property="og:image"       content="http://example.com/site-image.png" />
+  <meta property="fb:app_id"      content="111122223333444" />
+</head>
+  <!-- /.container -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <div class="container">
   <div class="row">
     <main class="col-md-8">
-      <h1 class="mb-4">投稿一覧</h1>
+      <h4 class="mb-4">投稿一覧</h4>
       {% include "blog/snippets/main_post_list.html" %}
       {% include "blog/snippets/pagination.html" %}
       {# {% include "blog/snippets/pagination_b.html" %} #}
@@ -17,4 +37,27 @@
     </aside>
   </div>
 </div>
+
+
+  <!-- /.container -->
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <footer class="page-footer font-small pt-4">
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+
 {% endblock %}
+
+{% load static %}
