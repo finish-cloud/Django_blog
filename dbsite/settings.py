@@ -26,7 +26,18 @@ SECRET_KEY = '_t!u7*ylkjp9u&$9@p5(!0b$4$#y2gr014ur-2ufv$v_(sts=r'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+EMAIL_HOST = 'smtp.muumuu-mail.com'
+EMAIL_HOST_USER = 'メールアドレス'
+EMAIL_HOST_PASSWORD = 'メールパスワード'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
 
+# Gmail で送信する場合
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'メールアドレス'
+EMAIL_HOST_PASSWORD = 'アプリ パスワード'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Application definition
 
@@ -38,6 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +64,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'dbsite.urls'
+
+SITE_ID = 1
 
 TEMPLATES = [
     {

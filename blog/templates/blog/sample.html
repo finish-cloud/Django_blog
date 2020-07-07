@@ -1,0 +1,8 @@
+{% load flatpages %}
+{% get_flatpages as flatpages %}
+<ul>
+  {% for page in flatpages %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+{% get_flatpages '/about/' as about_pages %}

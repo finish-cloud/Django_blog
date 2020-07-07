@@ -1,3 +1,4 @@
+# myproject/forms.py
 from django.forms import ModelForm, TextInput, Textarea
 
 from blog.models import Comment, Reply
