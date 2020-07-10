@@ -120,10 +120,10 @@ class Comment(models.Model):
         return send_email
 
 
-@receiver(post_save, sender=Comment)
-def comment_create_receiver(sender, instance, created, **kwargs):
-    if created:
-        instance.send_email_notif()
+# @receiver(post_save, sender=Comment)
+# def comment_create_receiver(sender, instance, created, **kwargs):
+#     if created:
+#         instance.send_email_notif()
 
 
 class Reply(models.Model):
@@ -141,20 +141,20 @@ class Reply(models.Model):
     def __str__(self):
         return self.text
 
-    def send_email_notif(self):
-        subject = "コメント返信"
-        message = "コメントに返信がありました。"
-        from_email = settings.DEFAULT_FROM_EMAIL
-        recipient_list = [settings.EMAIL_HOST_USER]
-        send_email = send_mail(
-            subject, message, from_email, recipient_list)
-        return send_email
+#     def send_email_notif(self):
+#         subject = "コメント返信"
+#         message = "コメントに返信がありました。"
+#         from_email = settings.DEFAULT_FROM_EMAIL
+#         recipient_list = [settings.EMAIL_HOST_USER]
+#         send_email = send_mail(
+#             subject, message, from_email, recipient_list)
+#         return send_email
 
 
-@receiver(post_save, sender=Reply)
-def comment_reply_receiver(sender, instance, created, **kwargs):
-    if created:
-        instance.send_email_notif()
+# @receiver(post_save, sender=Reply)
+# def comment_reply_receiver(sender, instance, created, **kwargs):
+#     if created:
+#         instance.send_email_notif()
 
 
 class PopularPost(models.Model):

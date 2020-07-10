@@ -1,10 +1,10 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 from .views import ContactFormView, ContactResultView
-from django.contrib.flatpages import views
 from django.contrib.flatpages.sitemaps import FlatPageSitemap
 from django.contrib.sitemaps.views import sitemap
-
+from .views import PostFormView, PostListView
+from django.contrib.flatpages import views
 
 from blog.views import (
     IndexView,
@@ -46,9 +46,7 @@ urlpatterns = [
     path('contact/', ContactFormView.as_view(), name='contact_form'),
     path('contact/result/', ContactResultView.as_view(), name='contact_result'),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
-]
-
-
-urlpatterns += [
-    path('<path:url>', views.flatpage),
+    path('', PostListView.as_view(), name='post_list'),
+    path('form/', PostFormView.as_view()),
+    path('pages/', include('django.contrib.flatpages.urls')),
 ]

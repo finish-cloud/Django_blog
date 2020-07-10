@@ -6,6 +6,9 @@ from django.shortcuts import get_object_or_404, redirect
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView
+from django.urls import reverse_lazy
+from .forms import PostForm
+from .models import Post
 
 from blog.forms import CommentForm, ReplyForm
 from blog.models import Post, Category, Tag, Comment, Reply
@@ -276,3 +279,15 @@ class ContactResultView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['success'] = "お問い合わせは正常に送信されました。"
         return context
+
+
+class PostListView(ListView):
+    """投稿リストのビュー"""
+    model = Post
+
+
+class PostFormView(CreateView):
+    """投稿フォームのビュー"""
+    model = Post
+    form_class = PostForm
+    success_url = reverse_lazy('blog:post_form')
