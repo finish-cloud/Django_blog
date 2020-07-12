@@ -3,6 +3,8 @@
 import os
 import sys
 
+import pymysql
+
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dbsite.settings')
     try:
@@ -14,3 +16,6 @@ if __name__ == '__main__':
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
+
+
+pymysql.install_as_MySQLdb()
