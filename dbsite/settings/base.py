@@ -13,31 +13,10 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+BASE_DIR = os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-EMAIL_HOST = 'smtp.muumuu-mail.com'
-EMAIL_HOST_USER = 'メールアドレス'
-EMAIL_HOST_PASSWORD = 'メールパスワード'
-EMAIL_PORT = 465
-EMAIL_USE_SSL = True
-
-# Gmail で送信する場合
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'メールアドレス'
-EMAIL_HOST_PASSWORD = 'アプリ パスワード'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
 
 # Application definition
 
