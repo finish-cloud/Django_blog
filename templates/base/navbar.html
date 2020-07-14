@@ -1,42 +1,26 @@
- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-    <div class="container">
-      <a class="navbar-brand" href="#">all for you</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'blog:index' %}">Home</a>
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href=""></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about/">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'blog:contact_form' %}">Contact</a>
-          </li>
+ <nav class="navbar navbar-light sticky-top navbar-expand-lg mb-4" style="background-color: #fbc700;">
+  <a class="navbar-brand" href="/">MyBlog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        <link href="css/social-buttons.css" rel="stylesheet">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'blog:index' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/about/">about me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="{% url 'blog:contact_form' %}">contact</a>
+      </li>
+      <link href="css/social-buttons.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
           <a href="#" class="nav-item nav-link"><i class="fa fa-facebook"></i></a>
           <a href="#" class="nav-item nav-link"><i class="fa fa-twitter"></i></a>
           <a href="#" class="nav-item nav-link"><i class="fa fa-github"></i></a>
-
-      </div>
-    </div>
-  </nav>
+    </ul>
+    {% include "blog/snippets/search_form.html" %}
+  </div>
+</nav>

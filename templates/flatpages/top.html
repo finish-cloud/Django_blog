@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
 <!--
  * A Design by GraphBerry
  * Author: GraphBerry
@@ -5,15 +8,20 @@
  * License: http://graphberry.com/pages/license
 -->
 <!DOCTYPE html>
+<html lang="ja">
+<head>
+
 <html>
 <head>
-    <title>Molly - Free PSD Creative Single Webpage Template | GraphBerry.com</title>
+    <title>yasama ポートフォリオサイト</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free singlepage web template created by GraphBerry">
     <meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, Responsive, Mobile">
     <meta name="author" content="GraphBerry.com"/>
+	<meta name="twitter:description" content="職務経歴書、制作物一覧">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Fonts -->
@@ -22,50 +30,22 @@
     <link rel="stylesheet" type="text/css" href="/static/css/social-icons.css">
     <link rel="stylesheet" type="text/css" href="/static/css/slick.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="shortcut icon" href="image/logo.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+  <script src="js/main_blog.js"></script>
 </head>
+
 <body>
 
 	<header id="header">
 
 		<!-- Section title -->
-		<h1 class="sr-only">Molly | Home page</h1>
-
-		<nav id="main-navigation" class="navbar navbar-default navbar-fixed-top">
-		  <!-- Section title -->
-		  <h1 class="sr-only">Main navigation</h1>
-
-		  <div class="container">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="sr-only">Toggle navigation</span>
-		      </button>
-		      <a id="brand-mobile" class="navbar-brand navbar-brand-center smoothScroll" href="#home">
-		        <img alt="Molly" src="img/svg/logo.svg">
-		      </a>
-		    </div>
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="main-navbar">
-			  <ul class="nav navbar-nav">
-		        <li class="active"><a class="smoothScroll" href="#home">Home <span class="sr-only">(current)</span></a></li>
-		        <li><a class="smoothScroll" href="#services">Services</a></li>
-		        <li><a class="smoothScroll" href="#portfolio">Portfolio</a></li>
-		      	<li id="brand-desktop">
-					<a class="navbar-brand smoothScroll" href="#home">
-						<img alt="Molly" src="img/svg/logo.svg">
-					</a>
-		      	</li>
-		        <li><a class="smoothScroll" href="#about">About us</a></li>
-		        <li><a class="smoothScroll" href="{% url 'blog:index' %}">Blog</a></li>
-		        <li><a class="smoothScroll" href="#contact">Contact</a></li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container -->
-		</nav>
+		<h1 class="sr-only">yasama | Home page</h1>
 
 	</header>
 
@@ -94,29 +74,16 @@
 
 						<div class="carousel-caption">
 
-							<span class="h4">Hello,we are <span class="text-yellow">Molly</span>, and we create</span>
+							<<span class="h4">ただ今、転職活動中！ <span class="text-yellow">yasama</span>興味を持って頂きましたらご連絡ください！</span>
 
-							<span class="h1">Brands</span>
+							<span class="h1">Portfolio Site</span>
 
-							<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-
-							<a href="#" class="btn btn-default white-yellow">Get Started</a>
-
-						</div>
-
-					</div> <!-- /.item -->
-
-					<div class="item">
-
-						<div class="overlay"></div>
-
-						<div class="carousel-caption">
-
-							<span class="h4">Hello,we are <span class="text-yellow">Molly</span>, and we create</span>
-
-							<span class="h1">Brands</span>
-
-							<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+							 <p>
+									希望職種：バックエンドエンジニア<br>
+									学習中言語：Ruby,Rails<br>
+									希望勤務地：愛知、大阪、東京<br>
+									希望年収：300万円/年 以上
+								</p>
 
 							<a href="#" class="btn btn-default white-yellow">Get Started</a>
 
@@ -130,11 +97,38 @@
 
 						<div class="carousel-caption">
 
-							<span class="h4">Hello,we are <span class="text-yellow">Molly</span>, and we create</span>
+							<span class="h4">ただ今、転職活動中！ <span class="text-yellow">yasama</span>興味を持って頂きましたらご連絡ください！</span>
 
-							<span class="h1">Brands</span>
+							<span class="h2">yasama</span>
 
-							<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+							 <p>
+								希望職種：バックエンドエンジニア<br>
+								学習中言語：Ruby,Rails<br>
+								希望勤務地：愛知、大阪、東京<br>
+								希望年収：300万円/年 以上
+							</p>
+							<a href="#" class="btn btn-default white-yellow">Get Started</a>
+
+						</div>
+
+					</div> <!-- /.item -->
+
+					<div class="item">
+
+						<div class="overlay"></div>
+
+						<div class="carousel-caption">
+
+							<span class="h4">ただ今、転職活動中！ <span class="text-yellow">yasama</span>興味を持って頂きましたらご連絡ください！</span>
+
+							<span class="h1">yasama</span>
+
+							 <p>
+								希望職種：バックエンドエンジニア<br>
+								学習中言語：Ruby,Rails<br>
+								希望勤務地：愛知、大阪、東京<br>
+								希望年収：300万円/年 以上
+							</p>
 
 							<a href="#" class="btn btn-default white-yellow">Get Started</a>
 
@@ -158,138 +152,141 @@
 
 		</section>
 
-		<section id="services">
 
-			<div class="container">
 
-				<div class="row">
+		 <section class="text-center pt_70" id="section1">
+      <div class="front_text">about me<h2 class="back_text">about me</h2></div>
+      <div class="container">
 
-					<div class="col-md-8 col-md-offset-2">
+        <div class="left_space">
+          <img src="image/yuki-profile2.jpg" class="profile_image" alt="長岡 勇輝（ながおか ゆうき）">
+          <div class="sns">
+            <ul class="text_center">
+              <li><a href="https://twitter.com/freepc_yuki" class="twitter" target="_blank">Twitter</a></li>
+              <li><a href="https://github.com/risottoupdate" class="github" target="_blank">GitHub</a></li>
+              <li><a href="https://qiita.com/Yuki_Nagaoka" class="Qiita" target="_blank">Qiita</a></li>
+              <li><a href="mailto:freepc.yuki@gmail.com" class="email" target="_blank">E-mail</a></li>
+            </ul>
+          </div>
+        </div>
 
-						<div class="title-content">
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">パーソナル情報</h3>
+              <p>　
+                ""
+                hidemaru11が修正<br>
+                1987年05月12日生まれ / 32歳
+              </p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-walking"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">経歴</h3>
+              <ul>
+                <li>・2010年3月 ： 近畿大学 理工学部 情報学科 卒業</li>
+                <li>
+                  ・2010年4月 ： 大手通信キャリア 就職（東証一部）
+                  <div class="indent">
+                    「挑戦する経営」という会社ポリシーに惹かれ入社を決意しました。<br>
+                    入社2年目で営業部の企画課に配属されました。<br>
+                    当時の営業部の課題は各取引先に柔軟な料金形態を提示出来ない事。<br>
+                    それに対し非常に柔軟な料金を設定可能な運用を提案し、多くの部署と交渉の上実現しました。これにより私はその年に<span class="red-bold">最高評価を頂きました。</span><br>
+                    真剣に課題と向き合い、毎日毎日考えて改善策を閃きました。<br>
+                    <span class="red-bold">常に頭を使い改善策を考える癖</span>がこの時身につきました。
+                  </div>
+                </li>
+                <li>・2014年9月 ： 大手通信キャリア 退職</li>
+                <li>
+                  ・2014年10月 ： 食品会社（製造メーカー) 就職
+                  <div class="indent">
+                    祖父が創業した会社に転職しました。<br>
+                    工場責任者となり、多くの改善を実行しました。<br>
+                    人が辞めない仕組み作り、工場業務の作業効率化、得意なExcelVBAを駆使して事務所業務のマクロ化の推進等です。<br>
+                    人が辞めない様に取り組み、<span class="red-bold">辞める人が年間50%まで減少</span>しました。<br>
+                    本当に多くの変化を求め、前向きに行動してきました。<br>
+                    <span class="red-bold">誰もやった事がない取り組みにより状況が好転する時、仕事へのやりがいや充実感を感じます。</span>
+                  </div>
+                </li>
+                <li>・2019年11月 ： 食品会社（製造メーカー) 退職</li>
+                <li>・現在転職活動中</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-hand-point-up"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">2019年に学習したプログラミングスキル</h3>
+              <p class="red-bold">5月16日から現在まで1日も休む事なく継続して学習を続けています</p>
+              <ul>
+                <li>5月16日〜5月27日( 12 日) ： HTML,CSS</li>
+                <li>5月27日〜6月17日( 22 日) ： JavaScript,jQuery</li>
+                <li>6月18日〜6月30日( 13 日) ： PHP</li>
+                <li>6月30日〜8月11日( 43 日) ： WordPress</li>
+                <li>8月12日〜現在（<span id="ruby_stady"></span>日） ： Ruby,Ruby on Rails</li>
+              </ul>
+              <p>※成果物については下記参照ください</p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-pen-nib"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">どの様な業務をしたいか</h3>
+              <p>
+                <span class="red-bold">多くの人の役にたつ画期的で面白いアプリの開発</span>に携わりたいです。<br>
+                その為に必要な言語やスキルを常に取り入れていける環境で働きたいです。<span>shotaも同感です。</span>
+              </p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-thumbs-up"></i>
+            </div>
+            <div id="future" class="info">
+              <h3 class="top_info">どの様なエンジニアになりたいか</h3>
+              <p>
+                親族が経営する会社を辞めてまでIT企業を志した理由は、<br>
+                <span class="red-bold">「大きな変化による価値を生み出し、多くの人の役に立ちたい」</span>からです。
+              </p>
+              <section>
+                <h4>1.変化を起こす</h4>
+                <p>
+                  今まで当たり前と思われていた事を疑い、常に改善案を考え、とにかくどんどん実行していきたいです。<br>
+                  新しい事に挑戦する事は非常に刺激的ですし、そこから見えてくる新しい景色があると考えています。それにより自分自身も大きく変化していけると思います。
+                </p>
+              </section>
+              <section>
+                <h4>2.価値を生む</h4>
+                <p>
+                  価値とはそのサービスや商品を支持してくれる人の数だと考えています。<br>
+                  私が提供するサービスにより多くの人に影響を与え、喜んで貰える事を常に意識して行動しております。<br>
+                  また、ITにはそれが実現可能だと思い、ITへの道を志しました。
+                </p>
+              </section>
+              <section>
+                <h4>3.影響力を持つ</h4>
+                <p>
+                  私が挑戦の中で得た情報やスキルは、どんどん他者へ提供していこうと考えております。<br>
+                  SNSを使って情報発信したり、技術記事を発信したりと、積極的に実行していきます。それにより1人でも多くの人に影響を与える事ができ、それが僕の志す変化による価値提供に必要な条件だと考えています。<br>
+                </p>
+              </section>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
 
-							<h2 class="section-title">Services</h2>
-
-							<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="services-container">
-
-					<div class="line"></div>
-
-					<div class="row">
-
-						<div class="col-md-3 col-sm-6">
-
-							<div class="service">
-
-								<figure>
-									<img src="img/svg/services/web_design.svg" alt="Web design services">
-									<figcaption><h4 class="service-title">Web design</h4></figcaption>
-								</figure>
-
-								<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
-
-							</div>
-
-						</div>
-
-						<div class="col-md-3 col-sm-6">
-
-							<div class="service">
-
-								<figure>
-									<img src="img/svg/services/graphic_design.svg" alt="Graphic design services">
-									<figcaption><h4 class="service-title">Graphic design</h4></figcaption>
-								</figure>
-
-								<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
-
-							</div>
-
-						</div>
-
-						<div class="col-md-3 col-sm-6">
-
-							<div class="service">
-
-								<figure>
-									<img src="img/svg/services/photography.svg" alt="Photography services">
-									<figcaption><h4 class="service-title">Photography</h4></figcaption>
-								</figure>
-
-								<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
-
-							</div>
-
-						</div>
-
-						<div class="col-md-3 col-sm-6">
-
-							<div class="service">
-
-								<figure>
-									<img src="img/svg/services/development.svg" alt="Development services">
-									<figcaption><h4 class="service-title">Developing</h4></figcaption>
-								</figure>
-
-								<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
-
-							</div>
-
-						</div>
-
-					</div> <!-- /.row -->
-
-				</div> <!-- /.services-container -->
-
-			</div> <!-- /.container -->
-
-			<div class="we-make-section">
-
-				<div class="overlay"></div>
-
-				<div class="container">
-
-					<div class="row reorder-sm">
-
-						<div class="col-md-5">
-
-							<div class="img-container">
-								<img src="img/svg/phones.svg" alt="Phones image">
-							</div>
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-7">
-
-							<div class="features-container">
-
-								<h3>We make web design</h3>
-
-								<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
-
-								<ul class="features-list">
-									<li>Clean and modern design</li>
-									<li>Fully responsive</li>
-									<li>Singlepage & multipage</li>
-									<li>Great for any business</li>
-								</ul>
-
-							</div> <!-- /.features-container -->
-
-						</div> <!-- /.col -->
-
-					</div> <!-- /.row -->
-
-				</div> <!-- /.container -->
-
-			</div> <!-- /.we-make-section -->
 
 			<div class="services-cta-container">
 
@@ -462,169 +459,6 @@
 
 		</section>
 
-		<section id="about">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-8 col-md-offset-2">
-
-						<div class="title-content">
-
-							<h2 class="section-title">About us</h2>
-
-							<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-
-						</div>
-
-					</div>
-
-				</div> <!-- /.row -->
-
-			</div> <!-- /.container -->
-
-			<div class="about-team slider-container">
-
-				<div class="team-member grabbable">
-
-					<div class="container">
-
-						<div class="row">
-
-							<div class="col-md-4">
-
-								<div class="img-container">
-									<img src="img/team/team_member_01.png" alt="Jane Doe - Creative Director">
-								</div>
-
-							</div>
-
-							<div class="col-md-8">
-
-								<div class="description">
-
-									<span class="h4">Jane Doe</span>
-
-									<p class="position"><i>Creative Director</i></p>
-
-									<div class="biography">
-
-										<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.</p>
-
-										<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. </p>
-
-									</div>
-
-									<ul class="social-list">
-										<li><a href="#"><i class="si social-facebook" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="si social-twitter" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="si social-dribbble" aria-hidden="true"></i></a></li>
-									</ul>
-
-								</div> <!-- /.desctiption -->
-
-							</div>
-
-						</div> <!-- /.row -->
-
-					</div> <!-- /.container -->
-
-				</div> <!-- /.team-member -->
-
-				<div class="team-member grabbable">
-
-					<div class="container">
-
-						<div class="row">
-
-							<div class="col-md-4">
-
-								<div class="img-container">
-									<img src="img/team/team_member_02.png" alt="John Smith - Chief Technology Officer">
-								</div>
-
-							</div>
-
-							<div class="col-md-8">
-
-								<div class="description">
-
-									<span class="h4">John Smith</span>
-
-									<p class="position"><i>Chief Technology Officer</i></p>
-
-									<div class="biography">
-
-										<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.</p>
-
-										<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. </p>
-
-									</div>
-
-									<ul class="social-list">
-										<li><a href="#"><i class="si social-facebook" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="si social-twitter" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="si social-dribbble" aria-hidden="true"></i></a></li>
-									</ul>
-
-								</div> <!-- /.descritption -->
-
-							</div>
-
-						</div> <!-- /.row -->
-
-					</div> <!-- /.container -->
-
-				</div> <!-- /.team-member -->
-
-				<div class="team-member grabbable">
-
-					<div class="container">
-
-						<div class="row">
-
-							<div class="col-md-4">
-
-								<div class="img-container">
-									<img src="img/team/team_member_03.png" alt="Anne Doe - Chief Happiness Officer">
-								</div>
-
-							</div>
-
-							<div class="col-md-8">
-
-								<div class="description">
-
-									<span class="h4">Anne Doe</span>
-
-									<p class="position"><i>Chief Happiness Officer</i></p>
-
-									<div class="biography">
-
-										<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.</p>
-
-										<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. </p>
-
-									</div>
-
-									<ul class="social-list">
-										<li><a href="#"><i class="si social-facebook" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="si social-twitter" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="si social-dribbble" aria-hidden="true"></i></a></li>
-									</ul>
-
-								</div> <!-- /.description -->
-
-							</div>
-
-						</div> <!-- /.row -->
-
-					</div> <!-- /.container -->
-
-				</div> <!-- /.team-member -->
-
-			</div> <!-- /.about-team -->
 
 			<div class="skills-company-subsection">
 
@@ -674,21 +508,6 @@
 
 						</div>
 
-						<div class="col-md-5">
-
-							<div class="company-subsection">
-
-								<h4>About company</h4>
-
-								<div class="description">
-
-									<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.</p>
-
-									<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-
-								</div>
-
-							</div> <!-- /.company-subsection -->
 
 						</div>
 
@@ -700,300 +519,253 @@
 
 		</section>
 
-		<section id="blog">
 
-			<div class="container">
 
-				<div class="row">
 
-					<div class="col-md-8 col-md-offset-2">
-
-						<div class="title-content">
-
-							<h2 class="section-title">Blog</h2>
-
-							<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-
-						</div>
-
-					</div>
-
-				</div> <!-- /.row -->
-
-			</div> <!-- /.container -->
-
-			<section id="articles">
-
-				<!-- Section title -->
-				<h3 class="sr-only">Articles</h3>
-
-
-				<div class="container">
-
-					<div class="row">
-
-						<div class="col-sm-6">
-
-							<article class="blog-entry first-row-entry">
-
-								<figure>
-
-									<img src="img/blog/blog_entry_01.jpg" alt="Blog entry 01 image">
-
-									<figcaption class="sr-only">Blog entry 01 image</figcaption>
-
-								</figure>
-
-								<div class="blog-entry-inner">
-
-									<h4><a href="#">Sample Blog Title</a></h4>
-
-									<p class="author-date"><span class="date">November 2013</span> by <span class="author"><a href="#">John Doe</a></span></p>
-
-									<p class="entry-content">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam.Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci.</p>
-
-									<a href="#" class="read-more pull-right">Read more...</a>
-
-								</div> <!-- /.blog-entry-inner -->
-
-							</article> <!-- /.blog-entry -->
-
-						</div>
-
-						<div class="col-sm-6">
-
-							<article class="blog-entry first-row-entry">
-
-								<figure>
-
-									<img src="img/blog/blog_entry_02.jpg" alt="Blog entry 02 image">
-
-									<figcaption class="sr-only">Blog entry 02 image</figcaption>
-
-								</figure>
-
-								<div class="blog-entry-inner">
-
-									<h4><a href="#">Sample Blog Title</a></h4>
-
-									<p class="author-date"><span class="date">November 2013</span> by <span class="author"><a href="#">John Doe</a></span></p>
-
-									<p class="entry-content">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam.Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci.</p>
-
-									<a href="#" class="read-more pull-right">Read more...</a>
-
-								</div> <!-- /.blog-entry-inner -->
-
-							</article> <!-- /.blog-entry -->
-
-						</div>
-
-					</div> <!-- /.row -->
-
-					<div class="row">
-
-						<div class="col-sm-6 col-md-4">
-
-							<article class="blog-entry second-row-entry">
-
-								<figure>
-
-									<img src="img/blog/blog_entry_03.jpg" alt="Blog entry 03 image">
-
-									<figcaption class="sr-only">Blog entry 03 image</figcaption>
-
-								</figure>
-
-								<div class="blog-entry-inner">
-
-									<h4><a href="#">Sample Blog Title</a></h4>
-
-									<p class="author-date"><span class="date">November 2013</span> by <span class="author"><a href="#">John Doe</a></span></p>
-
-									<p class="entry-content">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam...</p>
-
-									<a href="#" class="read-more pull-right">Read more...</a>
-
-								</div> <!-- /.blog-entry-inner -->
-
-							</article> <!-- /.blog-entry -->
-
-						</div>
-
-						<div class="col-sm-6 col-md-4">
-
-							<article class="blog-entry second-row-entry">
-
-								<figure>
-
-									<img src="img/blog/blog_entry_04.jpg" alt="Blog entry 04 image">
-
-									<figcaption class="sr-only">Blog entry 04 image</figcaption>
-
-								</figure>
-
-								<div class="blog-entry-inner">
-
-									<h4><a href="#">Sample Blog Title</a></h4>
-
-									<p class="author-date"><span class="date">November 2013</span> by <span class="author"><a href="#">John Doe</a></span></p>
-
-									<p class="entry-content">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam...</p>
-
-									<a href="#" class="read-more pull-right">Read more...</a>
-
-								</div> <!-- /.blog-entry-inner -->
-
-							</article> <!-- /.blog-entry -->
-
-						</div>
-
-						<div class="col-sm-6 col-md-4">
-
-							<article class="blog-entry second-row-entry">
-
-								<figure>
-
-									<img src="img/blog/blog_entry_05.jpg" alt="Blog entry 05 image">
-
-									<figcaption class="sr-only">Blog entry 05 image</figcaption>
-
-								</figure>
-
-								<div class="blog-entry-inner">
-
-									<h4><a href="#">Sample Blog Title</a></h4>
-
-									<p class="author-date"><span class="date">November 2013</span> by <span class="author"><a href="#">John Doe</a></span></p>
-
-									<p class="entry-content">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam...</p>
-
-									<a href="#" class="read-more pull-right">Read more...</a>
-
-								</div> <!-- /.blog-entry-inner -->
-
-							</article> <!-- /.blog-entry -->
-
-						</div>
-
-					</div> <!-- /.row -->
-
-					<a href="#" class="btn btn-default yellow-white">Show More</a>
-
-				</div> <!-- /.container -->
-
-			</section> <!-- /#articles -->
-
-			<div class="newsletter">
-
-				<div class="container">
-
-					<div class="row">
-
-						<div class="col-md-6 col-md-offset-3">
-
-							<h3>Subscribe to our newsletter</h3>
-
-							<form class="newsletter-form">
-
-								<div class="row">
-
-									<div class="col-sm-8">
-
-										<label class="sr-only" for="Email">Email</label>
-										<input type="email" id="Email" placeholder="Your Mail">
-
-									</div>
-
-									<div class="col-sm-4">
-
-										<button type="submit" class="btn btn-default white-blue">Send invitation</button>
-
-									</div>
-
-								</div> <!-- /.row -->
-
-							</form> <!-- /.newsletter-form -->
-
-						</div>
-
-					</div> <!-- /.row -->
-
-				</div> <!-- /.container -->
-
-			</div> <!-- /.newsletter -->
-
-		</section>
-
-		<section id="contact">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-8 col-md-offset-2">
-
-						<div class="title-content">
-
-							<h2 class="section-title">Contact us</h2>
-
-							<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-
-						</div>
-
-					</div>
-
-				</div> <!-- /.row -->
-
-				<form class="contact-form">
-
-					<div class="row">
-
-						<div class="col-md-4">
-
-							<label class="sr-only" for="Name">Name</label>
-							<input type="text" name="name" id="Name" placeholder="Your Name">
-
-						</div>
-
-						<div class="col-md-4">
-
-							<label class="sr-only" for="Email">Email</label>
-							<input type="email" name="email" id="Email" placeholder="Your Mail">
-
-						</div>
-
-						<div class="col-md-4">
-
-							<label class="sr-only" for="Subject">Subject</label>
-							<input type="text" name="subject" id="Subject" placeholder="Subject">
-
-						</div>
-
-					</div> <!-- /.row -->
-
-					<div class="row">
-
-						<div class="col-md-12">
-
-							<label class="sr-only" for="Message">Message</label>
-							<textarea name="message" id="Message" rows="9" placeholder="Enter Message Here..."></textarea>
-
-						</div>
-
-					</div> <!-- /.row -->
-
-					<button type="submit" class="btn btn-default white-blue">Send invitation</button>
-
-				</form>	<!-- /.contact-form -->
-
-			</div> <!-- /.container -->
-
-		</section>
 
 	</main>
 
 	<footer id="footer">
+	 <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright © Your Website 2020</small></div>
+        </div>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Log Cabin</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Tasty Cake</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Circus Tent</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Controller</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Locked Safe</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Submarine</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
 
 		<div class="container">
 
@@ -1001,21 +773,6 @@
 
 				<div class="col-md-6 col-md-offset-3">
 
-					<p class="mail">awesomemail@ourmail.com</p>
-
-					<p class="tel">(0) 123-456-789-00</p>
-
-					<ul class="social-list">
-						<li><a href="#"><i class="si social-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="si social-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="si social-google-plus" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="si social-rss" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="si social-dribbble" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="si social-flickr" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="si social-skype" aria-hidden="true"></i></a></li>
-					</ul>
-
-					<p class="copyright"> © Copyright <span id="year">2013</span> <span class="text-yellow">Molly</span>. All Rights Reserved</p>
 
 				</div>
 
@@ -1040,3 +797,9 @@
 
 </body>
 </html>
+
+
+
+
+{% endblock %}
+{% load static %}
